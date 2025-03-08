@@ -1,0 +1,48 @@
+Data Preparation:
+=================================
+ - Import the dataset containing customer reviews from Ryanair. Ensure it's in a format that you can work with, such as CSV, Excel, or JSON.
+ - Explore the structure of the dataset: check columns, data types, and any missing values.
+ - Data Cleaning and Preprocessing:
+	* Remove any irrelevant columns or features that won't contribute to the analysis.
+	* Handle missing values: either drop rows with missing values or impute them based on the context.
+	* Perform text preprocessing tasks like lowercasing, tokenization, removing punctuation, stopwords, and stemming/lemmatization.
+
+Exploratory Data Analysis (EDA):
+=================================
+ - Explore the distribution of review ratings.
+ - Visualize the distribution of sentiments (positive, negative, neutral) in the dataset using bar plots or pie charts. 
+ - Investigate the distribution of review lengths (number of words or characters) for each sentiment category. This can help identify if sentiment varies        based on the length of the review
+ - Analyze how sentiment varies over time. Plotting sentiment trends over time can reveal seasonal patterns or changes in sentiment trends.
+ - Explore the most frequent words or phrases used in the reviews (word clouds, frequency plots, etc.).
+ - Analyze the route showing most negative feedbacks.
+ - Explore word associations or co-occurrences within each sentiment category. Identify words that frequently appear together with positive or negative sentiments, which can provide insights into the language used by customers.
+
+Sentiment Analysis:
+=================================
+ - Utilize sentiment analysis techniques to determine the sentiment (positive, negative, neutral) of each review.
+ - Calculate sentiment scores for individual reviews or aggregate sentiment scores for topics or categories.
+ - Spacy/VADER (Valence Aware Dictionary and sEntiment Reasoner)
+
+Sentiment Classifer
+=================================
+ - Train supervised learning models (e.g., Support Vector Machines, Naive Bayes, Logistic Regression) using labeled data to classify text into sentiment categories (positive, negative, neutral).
+
+Topic Modeling:
+=================================
+ - Apply topic modeling techniques like Latent Dirichlet Allocation (LDA) or Non-negative Matrix Factorization (NMF) to identify topics or themes within the reviews.Determine the most important topics discussed by customers. Each topic represents a set of words that frequently co-occur in the reviews.
+ - Focus specifically on topics that are associated with negative sentiment. These topics may contain words or phrases commonly found in negative reviews, such as "poor customer service," "delayed flights," "uncomfortable seats," etc.
+ - Examine the keywords and representative documents associated with each negative sentiment topic. Look for recurring themes or specific issues mentioned by customers within these topics.
+ - Determine the importance or prevalence of each negative sentiment topic by analyzing the frequency of occurrence across the dataset. Topics that appear frequently are likely to represent significant pain points for customers.
+
+Root Cause Analysis:
+=================================
+ - Conduct root cause analysis on the identified topics to understand the underlying reasons behind customer feedback.
+ - Based on the root cause analysis, identify the most pressing issues or pain points in the airline's services.
+ - Prioritize these issues based on factors like frequency, severity, and impact on customer satisfaction.
+
+Recommendations:
+=================================
+ - Provide actionable recommendations to address the identified issues and improve customer satisfaction.
+ - Propose strategies for enhancing customer experience, operational efficiency, and overall service quality.
+
+gtech_palette  = ['#B3A369', '#A28D5B', '#003057', '#54585A', '#D6DBD4', '#F9F6E5', '#EAAA00']

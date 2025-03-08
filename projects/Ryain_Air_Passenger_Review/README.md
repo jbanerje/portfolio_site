@@ -1,0 +1,14 @@
+# Ryanair Passenger Reviews Analysis
+
+In contemporary business landscapes characterized by a paramount emphasis on customer feedback, the aviation sector stands as no exception. Amidst the burgeoning influx of online reviews, the conventional manual analysis of textual data becomes both impracticable and resource-intensive. Consequently, our project endeavors to confront this challenge through a programmatic framework, harnessing the capabilities of Natural Language Processing (NLP) techniques. By employing methodologies encompassing data exploration, sentiment classification, and topic modeling, this project aims to dissect passenger reviews comprehensively. Moreover, the study aspires to undertake root cause analysis to discern the foremost challenges encountered by passengers, along with delineating the specific routes most afflicted by these challenges.
+
+In this project, we aim to conduct a comprehensive analysis of passenger experience reviews for Ryanair, spanning from 2012 to 2024. Ryanair is one of Europe’s leading low-cost airlines that garners a vast amount of feedback from its passengers, covering various facets of their travel experience. Analyzing passenger reviews can offer Ryanair valuable insights into various aspects of their services, operations, and customer experiences.
+
+The project aims to achieve several objectives:
+- **Overall Sentiment Analysis:** Evaluate the overall sentiment of passengers towards airline services, exploring their satisfaction levels across the entirety of their travel experience.
+- **Service Quality Assessment:** Identify specific services or amenities that evoke the highest levels of satisfaction or dissatisfaction among passengers. Additionally, pinpoint recurring issues or patterns across reviews to understand service quality comprehensively.
+- **Operational Aspect Scrutiny:** Investigate frequent complaints or commendations regarding customer service, flight punctuality, baggage handling, and check-in procedures. Identify routes or flights consistently receiving negative feedback concerning operational aspects.
+- **Customer Service Evaluation:** Examine passengers' perceptions of the responsiveness and helpfulness of airline staff, both on the ground and during flights. Identify instances of exceptional or poor customer service mentioned in reviews.
+- **Sentiment Classifier Development:** Develop a sentiment classifier using machine learning techniques specifically tailored to Ryanair's context. This classifier will aid in automatically categorizing and analyzing passenger sentiments from reviews.
+
+**Innovation:** In our paper, we showcase our ability to pinpoint and address negative sentiments by tracing them back to specific airline routes leveraging graph network visualization and illustrate the routes with root cause.

@@ -1,0 +1,113 @@
+\documentclass[11pt]{article} % 11-pt font size
+\usepackage{titling}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}  % Set 1-inch margins
+\usepackage{multicol} % Include the multicol package
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumitem} % Cleaner package for numbering 
+% \usepackage[style=apa, backend=biber]{biblatex} % Package for references APA
+\usepackage{hyperref} % For clickable links
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{listings}
+
+\title{\textbf{Amazon Product Bundling and Recommendation \\7406 Project Group 115}}
+\date{}
+\begin{document}
+\maketitle
+\begin{center}
+\begin{minipage}{0.33\textwidth}
+    \centering
+    {\Large Ashish Puri} \\
+    apuri61@gatech.edu \\
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}
+    \centering
+    {\Large Jagannath Banerjee} \\
+    jbanerjee7@gatech.edu \\
+\end{minipage}
+\begin{minipage}{0.33\textwidth}
+    \centering
+    {\Large Piyush Shivrain} \\
+    pshivrain3@gatech.edu \\
+\end{minipage}
+\end{center}
+
+\section{Project Description}
+The objective of this project is to conduct a comprehensive analysis of Amazon sales data to gain valuable insights into sales trends, customer purchase behavior, and other factors influencing profitability. Leveraging various data mining techniques such as exploratory data analysis, clustering, association mining, and predictive modeling, we aim to extract meaningful patterns and relationships to build a product bundling strategy and recommend focused products to customers. By delving into multifaceted dimensions such as product categories, geographical distributions, and sales performance metrics, this analysis will furnish actionable insights to refine sales strategies and augment overall profitability.
+
+\section{Data}
+The Amazon sales dataset\cite{1} has been downloaded from \href{https://www.kaggle.com/datasets/anandshaw2001/amazon-sales-dataset}{Kaggle}.It consists of 3204 rows and 9 columns, containing information about order dates, shipping dates, email IDs of users, geographical locations, product categories, product names, sales figures, quantities sold, and profits. \\\\
+\textbf{Column Description:}
+\begin{itemize}
+    \item Order Date - Order\_Date.
+    \item Ship Date - Shipping Date.
+    \item Email\_ID - Email\_ID of Users
+    \item Geography - Location of Orders by Users.
+    \item Category - Product Category
+    \item Product Name - Product Name of Amazon
+    \item Sales - Amazon Product Sales
+    \item Quantity - how many units of a particular product are available.
+    \item Profit - Amazon Sales Profit
+\end{itemize}
+
+\section{Research Questions}
+This project aims to address several key research questions to gain a deeper understanding of Amazon sales dynamics and identify opportunities for up-sell and cross-sell recommendation.
+\begin{itemize}
+    \item What are the top-selling product categories on Amazon?
+    \item How do sales \& profit vary by geography?
+    \item How do sales \& profit trends vary over time?
+    \item Which products are associated and can be bundled together for up-sell and cross-sell?
+    \item Which customer can be recommended for bundled products?
+    \item Can customer segmentation improve targeted marketing efforts?
+\end{itemize}
+
+
+\section{Proposed Methodology}
+To analyze Amazon sales data, we will employ a combination of descriptive statistics, exploratory data analysis (EDA), and advanced data mining techniques.
+
+\subsection*{EDA:}
+\begin{itemize}
+    \item \textbf{Time Series Analysis:} Visualize sales and profit trends over time to identify seasonal patterns and long-term trends.
+    \item \textbf{Profitable Category Analysis:} Identify the most profitable product categories based on sales and profit margins.
+    \item \textbf{Popular Profitable Products:} Determine the top-selling and most profitable products within each category.
+    \item \textbf{Geography-Based Analysis:} Analyze sales, profit, and popular products based on geographical locations to identify regional preferences and trends.
+\end{itemize}
+
+\subsection*{Modelling:}
+\begin{itemize}
+    \item \textbf{Product Bundling Strategy:} Use association rule mining techniques (e.g., Lift, Support, Confidence) to identify products frequently purchased together, enabling the development of product bundling strategies.
+    \item \textbf{Customer Recommendation:} Implement content-based and collaborative filtering algorithms to provide personalized product recommendations to customers based on their purchase history and preferences.
+\end{itemize}
+\clearpage
+
+% Your bibliography section
+\begin{thebibliography}{5}
+
+    \bibitem{1}
+    {anandshaw2001}
+    anandshaw2001. (2024, March 4). \textit{Amazon\_Sales\_Dataset}. Kaggle. \url{https://www.kaggle.com/datasets/anandshaw2001/amazon-sales-dataset?resource=download}
+    
+    \bibitem{2}
+    Amazon selling stats - sell on Amazon. (n.d.). https://sell.amazon.com/blog/amazon-stats 
+    
+    \bibitem{3}
+    M. Saranya. (2023, July 25). \textit{Amazon sales analysis}. LinkedIn. \url{https://www.linkedin.com/pulse/amazon-sales-analysis-saranya-m/}
+    
+    
+    \bibitem{4}
+    According to the analysis conducted by J. Miglani (2023), titled \textit{Amazon Sales and Profit Analysis for 2022: Top 10 Insights}, which was posted on Forrester's blog, the analysis can be accessed through the following link: \url{https://www.forrester.com/blogs/amazon-sales-and-profit-analysis-for-2022-top-10-insights/}.
+    
+    
+    \bibitem{5}
+    Vamanan, Dilip. (2024, February 16). \textit{How to grow your profits with Amazon Data Analytics}. SellerApp Blog. \url{https://www.sellerapp.com/blog/amazon-data-analytics/}
+
+\end{thebibliography}
+
+\end{document}

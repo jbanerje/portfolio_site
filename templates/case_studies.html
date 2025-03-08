@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Case Studies - Jagannath Banerjee{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Case Studies</h1>
+    <p>In-depth analysis of real-world data science applications and their business impact.</p>
+</section>
+
+<section class="case-studies-list">
+    {% for case in case_studies %}
+    <div class="case-study-card detailed">
+        <h2>{{ case.title }}</h2>
+        <p class="case-description">{{ case.description }}</p>
+        <div class="highlights">
+            <h3>Key Highlights:</h3>
+            <ul>
+                {% for highlight in case.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="case-links">
+            <a href="{{ case.report_link }}" class="project-link" target="_blank">View Report</a>
+            <a href="{{ case.reference_link }}" class="project-link" target="_blank">Reference</a>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %} 
